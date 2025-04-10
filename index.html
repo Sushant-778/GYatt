@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/app.js"></script>
+    <script>
+        let calculation='';
+    </script>
 </head>
 <body>
 
     <h1>This is a Calculator</h1>
-    <button onclick="calulation+=1;">1</button>
-    <button onclick="calulation+=2;">2</button>
-    <button onclick="calulation+=3;">3</button>
-    <button onclick="calulation+=' + ';">+</button>
-    <button onclick="calulation+='=';">=</button>
+    <button onclick="calculation+='1'; console.log(calculation)">1</button>
+    <button onclick="calculation+='2'; console.log(calculation)">2</button>
+    <button onclick="calculation+='3'; console.log(calculation)">3</button>
+    <button onclick="calculation+=' + '; console.log(calculation)">+</button>
+    <button onclick="
+                    calculation=eval(calculation);
+                    console.log(calculation)">=</button>
 
 
 </body>
