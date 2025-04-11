@@ -5,30 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let calculation='';
+        let cartQuantity=2;
     </script>
 </head>
 <body>
-
-    <h1>This is a Calculator</h1>
-    <button onclick="calculation+='1'; console.log(calculation)">1</button>
-    <button onclick="calculation+='2'; console.log(calculation)">2</button>
-    <button onclick="calculation+='3'; console.log(calculation)">3</button><br>
-    <button onclick="calculation+='4'; console.log(calculation)">4</button>
-    <button onclick="calculation+='5'; console.log(calculation)">5</button>
-    <button onclick="calculation+='6'; console.log(calculation)">6</button><br>
-    <button onclick="calculation+='7'; console.log(calculation)">7</button>
-    <button onclick="calculation+='8'; console.log(calculation)">8</button>
-    <button onclick="calculation+='9'; console.log(calculation)">9</button><br>
-    <button onclick="calculation+=' - '; console.log(calculation)">-</button>
-    <button onclick="calculation+=' + '; console.log(calculation)">+</button>
-    <button onclick="calculation+=' * '; console.log(calculation)">*</button>
-    <button onclick="calculation+=' / '; console.log(calculation)">/</button>
-    <button onclick="calculation*=null; console.log(calculation)">AC</button>
+    <label for="button" id ="1"> Cart Quantity</label>
     <button onclick="
-                    calculation=eval(calculation);
-                    console.log(calculation)">=</button>
-
+    (cartQuantity<1)?alert('Not Enough quantity in the cart'):cartQuantity-=1,
+    console.log(`The Cart has been updated ${cartQuantity}`)"
+    >Remove from the Cart</button>
+    
+    
 
 </body>
 </html>
