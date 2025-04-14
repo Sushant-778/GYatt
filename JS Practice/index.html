@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-      const randomNumber = Math.random();
-      const result = randomNumber < 0.5 ? 'heads' : 'tails';
-
-      const guess = 'heads';
-      console.log(guess === result ? 'You win!' : 'You lose!');
-    </script>
 </head>
 <body>
-   
+<p>Amazon Shipping Container</p>
+<p class="total-cost"></p>
+<p></p>
 
+<input type="text" placeholder="Cost of the Order" 
+class="input" onkeydown=listenEnterKey(event)>
+<button onclick= calcTotal()  >Calculate</button>
+
+    <script>
+    function calcTotal(){
+    const inputElement = document.querySelector(".input");
+    let cost = +inputElement.value;
+    if(cost<40){cost=cost+10}
+    
+    document.querySelector('.total-cost').innerText=`the cost is: ${cost}`
+    }
+    function listenEnterKey(event){
+      console.log(event.key);
+      if(event.key === 'Enter'){ calcTotal()}
+    }
+    </script>
 </body>
 </html>
