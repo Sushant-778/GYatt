@@ -1,6 +1,6 @@
 console.log('yooolo');
 
-
+// scope and stuff
 function one(){
     const userName='Sushant'
 

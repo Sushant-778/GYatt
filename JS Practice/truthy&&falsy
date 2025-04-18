@@ -1,0 +1,21 @@
+/*falsey values
+        false
+        0
+        -0
+        ''
+        null
+        undefined
+        NaN 
+        BigInt 0n
+
+truthy values
+        true
+        Number
+        []
+        '0'
+        'false'
+        ' '
+        {}
+        function(){}
+        
+    */
